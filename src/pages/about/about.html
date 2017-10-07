@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <img [src]="_DomSanitizationService.bypassSecurityTrustUrl(cameraData)" *ngIf="photoTaken">
+    <img [src]="cameraUrl" *ngIf="photoSelected">
+    <button ion-button round (click)="openCamera()">Open camera</button>
+    <button ion-button round (click)="screeShort()">Select from gallery</button>
+</ion-content>

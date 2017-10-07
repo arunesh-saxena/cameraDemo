@@ -1,0 +1,26 @@
+.page-camera {
+    #ionball {
+        position: absolute;
+        bottom: 218px;
+        left: calc(50% - 50px);
+        width: 100px;
+        height: 100px;
+        // background-image: url(../assets/images/ionball.png);
+        border: 1px solid;
+        border-radius: 50%;
+    }
+    // .nav-decor {
+    // background-color: white !important;
+    // }
+}
+
+article.image {
+    display: none;
+}
+
+.bg-white {
+    // background-color: transparent !important;
+    article.image {
+        display: block;
+    }
+}

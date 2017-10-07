@@ -1,0 +1,51 @@
+<!--
+  Generated template for the Camera page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Camera</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="page-camera">
+
+    <!--<article class="page-camera1" [ngClass]="{'my-class': true }">-->
+    <div id="ionball">
+    </div>
+
+    <ion-fab right top small [hidden]="false">
+        <button (click)="switchCamera()" ion-fab color="light"><ion-icon name="switch"></ion-icon></button>
+    </ion-fab>
+
+    <ion-fab left top small [hidden]="false">
+        <button (click)="stopCamera()" ion-fab color="light"><ion-icon name="exit"></ion-icon></button>
+    </ion-fab>
+
+    <ion-fab right bottom small>
+        <button (click)="takePicture()" ion-fab color="light"><ion-icon name="archive"></ion-icon></button>
+    </ion-fab>
+
+    <ion-fab left bottom small [hidden]="false">
+        <button (click)="openCamera()" ion-fab color="light"><ion-icon name="camera"></ion-icon></button>
+        <button (click)="refresh()" ion-fab color="light"><ion-icon name="stop"></ion-icon></button>
+    </ion-fab>
+    <!--</article>-->
+    <article class="image">
+        <ion-row bottom>
+            <ion-col>
+                <ion-img width="200" height="200" src="{{image.original}} "></ion-img>
+            </ion-col>
+        </ion-row>
+        <ion-row bottom>
+            <ion-col>
+                <ion-img width="200" height="200" src="{{image.preview}} "></ion-img>
+            </ion-col>
+        </ion-row>
+    </article>
+</ion-content>
